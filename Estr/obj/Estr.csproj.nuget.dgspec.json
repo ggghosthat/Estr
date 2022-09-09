@@ -1,36 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# projects\\estr\\Estr\\Estr.csproj": {}
+    "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj": {}
   },
   "projects": {
-    "E:\\C# projects\\estr\\Estr\\Estr.csproj": {
+    "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# projects\\estr\\Estr\\Estr.csproj",
+        "projectUniqueName": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj",
         "projectName": "Estr",
-        "projectPath": "E:\\C# projects\\estr\\Estr\\Estr.csproj",
-        "packagesPath": "C:\\Users\\ttifo\\.nuget\\packages\\",
-        "outputPath": "E:\\C# projects\\estr\\Estr\\obj\\",
+        "projectPath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj",
+        "packagesPath": "/home/xallaro7788/.nuget/packages/",
+        "outputPath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ttifo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/xallaro7788/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
@@ -55,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/xallaro7788/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

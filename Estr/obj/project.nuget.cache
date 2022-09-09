@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Djxh0hlsv5XQKbk+PiCLT3zw+O1N1mQhk8gJvOOQgS41e/HkxcCsnPAPUIUm3LcUKuY6dyY7nKEh5G3O6U5D1Q==",
+  "dgSpecHash": "gWIQLUpJ980ZsdKI3EVBZ8uDLhJ3w0UkTr9vF3yP60aZ/cl+GljqCTRhKrVxblFB+pW24CznhpqfAM4qtO7u3A==",
   "success": true,
-  "projectFilePath": "E:\\C# projects\\estr\\Estr\\Estr.csproj",
+  "projectFilePath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ttifo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "/home/xallaro7788/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

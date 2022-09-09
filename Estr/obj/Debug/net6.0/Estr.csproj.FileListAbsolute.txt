@@ -1,0 +1,12 @@
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.csproj.AssemblyReference.cache
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.GeneratedMSBuildEditorConfig.editorconfig
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.AssemblyInfoInputs.cache
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.AssemblyInfo.cs
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.csproj.CoreCompileInputs.cache
+/home/xallaro7788/sharp/estr_project/Estr/Estr/bin/Debug/net6.0/Estr.deps.json
+/home/xallaro7788/sharp/estr_project/Estr/Estr/bin/Debug/net6.0/Estr.dll
+/home/xallaro7788/sharp/estr_project/Estr/Estr/bin/Debug/net6.0/Estr.pdb
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.dll
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/refint/Estr.dll
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.pdb
+/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/ref/Estr.dll

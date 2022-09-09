@@ -18,49 +18,8 @@ namespace Estr.Host{
             _handler = handler;
         }
 
-        public void StartSingleThread()
-        {
-            TcpListener tcpListener = new TcpListener(IPAddress.Any, 80);
-            tcpListener.Start();
-            System.Console.WriteLine("Server started !");
-
-            while(true)
-            {
-                try
-                {
-                    using(var client = tcpListener.AcceptTcpClient())
-                    using (var stream = client.GetStream())
-                    using (var reader = new StreamReader(stream))
-                    {
-
-                        var head = reader.ReadLine();
-                        for (string line = null; line != string.Empty; line = reader.ReadLine());
-                        
-                        var request = RequestParser.Parse(head);
-                        _handler.Handle(stream, request);
-                    }
-                }
-                catch(Exception ex)
-                {
-                    System.Console.WriteLine(ex);
-                }
-            }
-        }
-
-        public void StartThreadPool()
-        {
-            TcpListener tcpListener = new TcpListener(IPAddress.Any, 80);
-            
-            tcpListener.Start();
-            System.Console.WriteLine("Server started !");
-
-            while(true)
-            {
-                var client = tcpListener.AcceptTcpClient();
-                ProcessClient(client);
-            }
-        }
-
+        
+        
         public async Task StartAsync()
         {
             TcpListener tcpListener = new TcpListener(IPAddress.Any, 80);
@@ -74,7 +33,7 @@ namespace Estr.Host{
                     var _ = ProcessClientAsync(client);                
             }
         }
-
+        
         private void ProcessClient(TcpClient client)
         {
             ThreadPool.QueueUserWorkItem(o => 
@@ -88,8 +47,8 @@ namespace Estr.Host{
                         var head = reader.ReadLine();
                         for (string line = null; line != string.Empty; line = reader.ReadLine());
                         
-                        var request = RequestParser.Parse(head);
-                        _handler.Handle(stream, request);
+
+                        //var request = RequestParser.Parse(head                        //_handler.Handle(stream, request);
                     }
                 }
                 catch(Exception ex)
@@ -99,6 +58,7 @@ namespace Estr.Host{
             });
         }
 
+        
         private async Task ProcessClientAsync(TcpClient client)
         {
             try
@@ -111,8 +71,10 @@ namespace Estr.Host{
                     var head = await reader.ReadLineAsync();
                     for (string line = null; line != string.Empty; line = await reader.ReadLineAsync());
                 
-                    var request = RequestParser.Parse(head);
-                    await _handler.HandleAsync(stream, request);
+                    Console.WriteLine(head);
+
+                    //var request = RequestParser.Parse(head);
+                    //await _handler.HandleAsync(stream, request);
                 }
             }
             catch(Exception ex)
