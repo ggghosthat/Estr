@@ -1,22 +1,24 @@
 using System.Net.Sockets;
 using System.Net;
 using Estr.Handlers;
+using System;
 
 namespace Estr.Processor
 {
     interface IProcessor
     {
+        
         void Process(TcpClient client);
         void RegistHandler(IHandler handler);
-        void RemoveHandler(string hid);
+        void RemoveHandler(Guid hid);
 
         void RemoveAllHandlers();
 
         void ActivateAllHandlers();
         void DeactivateAllHandlers();
 
-        void ActivateHandler(string hid);
-        void DeactivateHandler(string hid);
+        void ActivateHandler(Guid hid);
+        void DeactivateHandler(Guid hid);
         
     }
 }

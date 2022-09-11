@@ -9,6 +9,10 @@ namespace Estr.Handlers{
     {
         private readonly string _path;
 
+        public Guid HandlerId {get; init;} = Guid.NewGuid();
+
+        public bool IsActive {get; private set;}
+
         public StaticFileHandler(string path)
         {
             _path = path;
@@ -16,6 +20,9 @@ namespace Estr.Handlers{
 
         public void Handle(Stream stream, Request request)
         {
+            if (!IsActive)
+                return;
+            
             using (var writer = new StreamWriter(stream))
             {
                 var completePath = Path.Combine(_path, request.Path.Substring(1));
@@ -38,6 +45,9 @@ namespace Estr.Handlers{
 
         public async Task HandleAsync(Stream stream, Request request)
         {
+            if (!IsActive)
+                return;
+
             using (var writer = new StreamWriter(stream))
             {
                 var completePath = Path.Combine(_path, request.Path.Substring(1));
@@ -56,6 +66,17 @@ namespace Estr.Handlers{
 
                 Console.WriteLine(completePath);
             }
+        }   
+
+        public void Activate()
+        {
+            IsActive = true;
         }
+
+        public void Deactivate()
+        {
+            IsActive = false;
+        }
+        
     }
 }

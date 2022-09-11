@@ -14,19 +14,24 @@ namespace Estr.Handlers{
     {
         private readonly Dictionary<string, Func<object>> _routs;
 
+        public Guid HandlerId {get; init;} = Guid.NewGuid();
+
+        public bool IsActive {get; private set; }
+
+
         public ControllerHandler(Assembly controllerAssembly)
         {
             this._routs = controllerAssembly.GetTypes()
-                .Where(x => typeof(IController).IsAssignableFrom(x))
-                .SelectMany(Controller => Controller.GetMethods().Select(Method => 
-                    new 
-                    {
-                        Controller,
-                        Method
-                    }
-                ))
-                .ToDictionary(key => GetPath(key.Controller, key.Method),
-                              value => GetEndpointMethod(value.Controller, value.Method));
+            .Where(x => typeof(IController).IsAssignableFrom(x))
+            .SelectMany(Controller => Controller.GetMethods().Select(Method => 
+                new 
+                {
+                    Controller,
+                    Method
+                }
+            ))
+            .ToDictionary(key => GetPath(key.Controller, key.Method),
+                          value => GetEndpointMethod(value.Controller, value.Method));
         }
 
         private Func<object> GetEndpointMethod(Type controller, MethodInfo method)
@@ -46,8 +51,12 @@ namespace Estr.Handlers{
             return "/" + name + "/" + method.Name;
         }
 
+
         public void Handle(Stream stream, Request request)
         {
+            if(!IsActive)
+                return;
+
             if (!_routs.TryGetValue(request.Path, out var func))
                 ResponseWriter.WriteStatusCode(HttpStatusCode.NotFound, stream);
             else
@@ -59,6 +68,9 @@ namespace Estr.Handlers{
 
         public async Task HandleAsync(Stream stream, Request request)
         {
+            if (!IsActive)
+                return; 
+
             if (!_routs.TryGetValue(request.Path, out var func))
                 await ResponseWriter.WriteStatusCodeAsync(HttpStatusCode.NotFound, stream);
             else
@@ -105,6 +117,18 @@ namespace Estr.Handlers{
             {
                 await WriteControllerResponseAsync(JsonConvert.SerializeObject(response), stream);
             }
+        }
+    
+
+
+        public void Activate()
+        {
+            IsActive = true;
+        }
+
+        public void Deactivate()
+        {
+            IsActive = false;
         }
     }
 }
