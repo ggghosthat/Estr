@@ -5,10 +5,10 @@ using System;
 
 namespace Estr.Processor
 {
-    interface IProcessor
+    public interface IProcessor
     {
         
-        void Process(TcpClient client);
+        void Process(string domainRoute);
         void RegistHandler(IHandler handler);
         void RemoveHandler(Guid hid);
 

@@ -27,7 +27,7 @@ namespace Estr.Handlers{
             
             using (var writer = new StreamWriter(stream))
             {
-                var completePath = Path.Combine(_path, request.Path.Substring(1));
+                var completePath = Path.Combine(_path, request.DomainRoute.Substring(1));
                 
                 if (!File.Exists(completePath))
                 {
@@ -52,7 +52,7 @@ namespace Estr.Handlers{
 
             using (var writer = new StreamWriter(stream))
             {
-                var completePath = Path.Combine(_path, request.Path.Substring(1));
+                var completePath = Path.Combine(_path, request.DomainRoute.Substring(1));
                 
                 if (!File.Exists(completePath))
                 {

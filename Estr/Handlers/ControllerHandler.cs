@@ -59,7 +59,7 @@ namespace Estr.Handlers{
             if(!IsActive)
                 return;
 
-            if (!_routs.TryGetValue(request.Path, out var func))
+            if (!_routs.TryGetValue(request.DomainRoute, out var func))
                 ResponseWriter.WriteStatusCode(HttpStatusCode.NotFound, stream);
             else
             {
@@ -73,7 +73,7 @@ namespace Estr.Handlers{
             if (!IsActive)
                 return; 
 
-            if (!_routs.TryGetValue(request.Path, out var func))
+            if (!_routs.TryGetValue(request.DomainRoute, out var func))
                 await ResponseWriter.WriteStatusCodeAsync(HttpStatusCode.NotFound, stream);
             else
             {
