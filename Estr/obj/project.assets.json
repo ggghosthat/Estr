@@ -52,19 +52,19 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "/home/ollar7788/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ollar7788/sharp/estr_project/Estr/Estr/Estr.csproj",
+      "projectUniqueName": "/home/ollar7788/sharp/Estr/Estr/Estr.csproj",
       "projectName": "Estr",
-      "projectPath": "/home/ollar7788/sharp/estr_project/Estr/Estr/Estr.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/home/ollar7788/sharp/estr_project/Estr/Estr/obj/",
+      "projectPath": "/home/ollar7788/sharp/Estr/Estr/Estr.csproj",
+      "packagesPath": "/home/ollar7788/.nuget/packages/",
+      "outputPath": "/home/ollar7788/sharp/Estr/Estr/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/ollar7788/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

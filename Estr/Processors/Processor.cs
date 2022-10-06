@@ -32,29 +32,29 @@ namespace Estr.Processor
 
         public void RemoveAllHandlers()
         {
-	    _handlers.Clear();
+    	    _handlers.Clear();
         }
 
         public void ActivateAllHandlers()
         {
-	    foreach (IHandler handler in _handlers.Values)
-		handler.Activate();
+	        foreach (IHandler handler in _handlers.Values)
+		        handler.Activate();
         }
 
         public void DeactivateAllHandlers()
         {
-	    foreach (IHandler handler in _handlers.Values)
-		handler.Deactivate();
+	        foreach (IHandler handler in _handlers.Values)
+		        handler.Deactivate();
         }
 
         public void ActivateHandler(Guid hid)
         {
-	    ((IHandler)_handlers[hid]).Activate();
+	        ((IHandler)_handlers[hid]).Activate();
         }
 
         public void DeactivateHandler(Guid hid)
         {
-	    ((IHandler)_handlers[hid]).Deactivate();
+	        ((IHandler)_handlers[hid]).Deactivate();
         }
     }
 }

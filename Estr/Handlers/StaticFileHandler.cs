@@ -11,6 +11,8 @@ namespace Estr.Handlers{
 
         public Guid HandlerId {get; init;} = Guid.NewGuid();
 
+        public string DomainName {get; init;} = "StaticDomain";
+
         public bool IsActive {get; private set;}
 
         public StaticFileHandler(string path)

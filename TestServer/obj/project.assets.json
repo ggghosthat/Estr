@@ -75,11 +75,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/xallaro7788/sharp/estr_project/Estr/TestServer/TestServer.csproj",
+      "projectUniqueName": "/home/ollar7788/sharp/Estr/TestServer/TestServer.csproj",
       "projectName": "TestServer",
-      "projectPath": "/home/xallaro7788/sharp/estr_project/Estr/TestServer/TestServer.csproj",
+      "projectPath": "/home/ollar7788/sharp/Estr/TestServer/TestServer.csproj",
       "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/home/xallaro7788/sharp/estr_project/Estr/TestServer/obj/",
+      "outputPath": "/home/ollar7788/sharp/Estr/TestServer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/root/.nuget/NuGet/NuGet.Config"
@@ -94,8 +94,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj": {
-              "projectPath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj"
+            "/home/ollar7788/sharp/Estr/Estr/Estr.csproj": {
+              "projectPath": "/home/ollar7788/sharp/Estr/Estr/Estr.csproj"
             }
           }
         }
@@ -125,7 +125,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/xallaro7788/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/ollar7788/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

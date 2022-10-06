@@ -5,6 +5,7 @@ using System;
 namespace Estr.Handlers{
     public interface IHandler{
         public Guid HandlerId {get; init;}
+        public string DomainName {get; init;}
         public bool IsActive {get;}
 
         void Handle(Stream stream, Request request);

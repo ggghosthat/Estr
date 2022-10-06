@@ -16,6 +16,8 @@ namespace Estr.Handlers{
 
         public Guid HandlerId {get; init;} = Guid.NewGuid();
 
+        public string DomainName {get; init;} = "ControllerDomain";
+
         public bool IsActive {get; private set; }
 
 

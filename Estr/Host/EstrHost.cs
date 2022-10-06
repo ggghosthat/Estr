@@ -29,33 +29,9 @@ namespace Estr.Host{
 
             while(true)
             {
-                    var client = await tcpListener.AcceptTcpClientAsync();
-                    var _ = ProcessClientAsync(client);                
+                var client = await tcpListener.AcceptTcpClientAsync();
+                var _ = ProcessClientAsync(client);                
             }
-        }
-        
-        private void ProcessClient(TcpClient client)
-        {
-            ThreadPool.QueueUserWorkItem(o => 
-            {
-                try{
-                    using(client)
-                    using (var stream = client.GetStream())
-                    using (var reader = new StreamReader(stream))
-                    {
-
-                        var head = reader.ReadLine();
-                        for (string line = null; line != string.Empty; line = reader.ReadLine());
-                        
-
-                        //var request = RequestParser.Parse(head                        //_handler.Handle(stream, request);
-                    }
-                }
-                catch(Exception ex)
-                {
-                    System.Console.WriteLine(ex);
-                }
-            });
         }
 
         
