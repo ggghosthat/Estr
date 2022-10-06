@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/xallaro7788/sharp/estr_project/Estr/TestServer/TestServer.csproj": {}
+  },
+  "projects": {
+    "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj",
+        "projectName": "Estr",
+        "projectPath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/xallaro7788/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/xallaro7788/sharp/estr_project/Estr/TestServer/TestServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/xallaro7788/sharp/estr_project/Estr/TestServer/TestServer.csproj",
+        "projectName": "TestServer",
+        "projectPath": "/home/xallaro7788/sharp/estr_project/Estr/TestServer/TestServer.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/xallaro7788/sharp/estr_project/Estr/TestServer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj": {
+                "projectPath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/xallaro7788/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

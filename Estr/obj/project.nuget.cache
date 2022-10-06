@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gWIQLUpJ980ZsdKI3EVBZ8uDLhJ3w0UkTr9vF3yP60aZ/cl+GljqCTRhKrVxblFB+pW24CznhpqfAM4qtO7u3A==",
+  "dgSpecHash": "fNpUXz9ch73wMb2n28g53DMN5yZPbIanSqaow3R0i/13L7/v45n7Lahod80j+NDff8tC78wimRgKWKFpioWvGw==",
   "success": true,
-  "projectFilePath": "/home/xallaro7788/sharp/estr_project/Estr/Estr/Estr.csproj",
+  "projectFilePath": "/home/ollar7788/sharp/estr_project/Estr/Estr/Estr.csproj",
   "expectedPackageFiles": [
-    "/home/xallaro7788/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+    "/root/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

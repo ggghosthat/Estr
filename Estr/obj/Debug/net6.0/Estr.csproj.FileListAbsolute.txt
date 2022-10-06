@@ -10,3 +10,15 @@
 /home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/refint/Estr.dll
 /home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.pdb
 /home/xallaro7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/ref/Estr.dll
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.csproj.AssemblyReference.cache
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.GeneratedMSBuildEditorConfig.editorconfig
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.AssemblyInfoInputs.cache
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.AssemblyInfo.cs
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.csproj.CoreCompileInputs.cache
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.dll
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/refint/Estr.dll
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/Estr.pdb
+/home/ollar7788/sharp/estr_project/Estr/Estr/bin/Debug/net6.0/Estr.deps.json
+/home/ollar7788/sharp/estr_project/Estr/Estr/bin/Debug/net6.0/Estr.dll
+/home/ollar7788/sharp/estr_project/Estr/Estr/bin/Debug/net6.0/Estr.pdb
+/home/ollar7788/sharp/estr_project/Estr/Estr/obj/Debug/net6.0/ref/Estr.dll
